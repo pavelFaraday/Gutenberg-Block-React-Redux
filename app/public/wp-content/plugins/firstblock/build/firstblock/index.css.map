@@ -1,1 +1,1 @@
-{"version":3,"file":"firstblock/index.css","mappings":";;;AACA;EACC;AAAD,C","sources":["webpack://firstblock/./src/firstblock/editor.scss"],"sourcesContent":["$border-color: #f00;\n.wp-block-create-block-firstblock {\n\tborder: 1px dotted $border-color;\n}\n"],"names":[],"sourceRoot":""}
+{"version":3,"file":"firstblock/index.css","mappings":";;;AAEA;EACC;AADD,C","sources":["webpack://firstblock/./src/firstblock/editor.scss"],"sourcesContent":["$border-color: #f00;\n\n.wp-block-create-block-firstblock {\n\tborder: 1px dotted $border-color;\n}\n"],"names":[],"sourceRoot":""}
