@@ -1,10 +1,18 @@
 var registerBlockType = wp.blocks.registerBlockType;
+var createElement = wp.element.createElement;
 
 registerBlockType("blocks-course/firstblock", {
   edit: function () {
-    return "Edit";
+    return createElement(
+      "p",
+      {
+        className: "first-block",
+        style: { color: "blue", fontSize: "20px" },
+      },
+      "Edit"
+    );
   },
   save: function () {
-    return "Save";
+    return createElement("p", null, "Save");
   },
 });
