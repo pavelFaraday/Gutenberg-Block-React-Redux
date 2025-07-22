@@ -39,6 +39,49 @@ function blocks_theme_setup()
 	add_theme_support('automatic-feed-links');
 	add_theme_support('title-tag');
 	add_theme_support('post-thumbnails');
+	add_theme_support('editor-color-palette', array(
+		array(
+			'name'  => __('Primary Color', 'blocks-theme'),
+			'slug'  => 'primary',
+			'color' => '#000000ff',
+		),
+		array(
+			'name'  => __('Secondary Color', 'blocks-theme'),
+			'slug'  => 'secondary',
+			'color' => '#fac903ff',
+		),
+	));
+	add_theme_support('editor-font-sizes', array(
+		array(
+			'name'      => __('Small', 'blocks-theme'),
+			'shortName' => __('S', 'blocks-theme'),
+			'size'      => 12,
+			'slug'      => 'small',
+		),
+		array(
+			'name'      => __('Regular', 'blocks-theme'),
+			'shortName' => __('M', 'blocks-theme'),
+			'size'      => 16,
+			'slug'      => 'regular',
+		),
+		array(
+			'name'      => __('Large', 'blocks-theme'),
+			'shortName' => __('L', 'blocks-theme'),
+			'size'      => 36,
+			'slug'      => 'large',
+		),
+	));
+	add_theme_support('custom-line-height');
+	add_theme_support('custom-spacing');
+	add_theme_support(
+		'custom-units',
+		'px',
+		'em',
+		'rem',
+		'vh',
+		'vw'
+	);
+
 
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus(
