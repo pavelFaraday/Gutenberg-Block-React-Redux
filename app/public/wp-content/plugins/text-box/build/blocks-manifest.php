@@ -24,6 +24,10 @@ return array(
 		'attributes' => array(
 			'text' => array(
 				'type' => 'string'
+			),
+			'alignment' => array(
+				'type' => 'string',
+				'default' => 'left'
 			)
 		),
 		'textdomain' => 'text-box',
