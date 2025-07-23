@@ -21,6 +21,11 @@ return array(
 		'supports' => array(
 			'html' => false
 		),
+		'attributes' => array(
+			'text' => array(
+				'type' => 'string'
+			)
+		),
 		'textdomain' => 'text-box',
 		'editorScript' => 'file:./index.js',
 		'editorStyle' => 'file:./index.css',
