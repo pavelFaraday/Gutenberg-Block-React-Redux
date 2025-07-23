@@ -5,13 +5,11 @@ import save from "./save";
 import metadata from "./block.json";
 
 registerBlockType(metadata.name, {
-	/**
-	 * @see ./edit.js
-	 */
+	icon: {
+		src: "text-page",
+		foreground: "blue",
+		background: "light-gray",
+	},
 	edit: Edit,
-
-	/**
-	 * @see ./save.js
-	 */
 	save,
 });

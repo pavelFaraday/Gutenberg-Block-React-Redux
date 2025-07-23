@@ -8,7 +8,6 @@ return array(
 		'version' => '0.1.0',
 		'title' => 'Text Box',
 		'category' => 'text',
-		'icon' => 'text-page',
 		'description' => 'A simple text box.',
 		'example' => array(
 			
