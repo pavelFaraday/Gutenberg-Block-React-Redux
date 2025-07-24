@@ -28,6 +28,12 @@ return array(
 			'alignment' => array(
 				'type' => 'string',
 				'default' => 'left'
+			),
+			'backgroundColor' => array(
+				'type' => 'string'
+			),
+			'textColor' => array(
+				'type' => 'string'
 			)
 		),
 		'textdomain' => 'text-box',
