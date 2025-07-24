@@ -19,7 +19,12 @@ return array(
 			'paragraph'
 		),
 		'supports' => array(
-			'html' => false
+			'html' => false,
+			'color' => array(
+				'background' => true,
+				'text' => true,
+				'gradients' => true
+			)
 		),
 		'attributes' => array(
 			'text' => array(

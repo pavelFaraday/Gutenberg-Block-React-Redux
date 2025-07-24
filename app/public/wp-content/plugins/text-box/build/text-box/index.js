@@ -8,7 +8,7 @@
   \*********************************/
 /***/ ((module) => {
 
-module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"create-block/text-box","version":"0.1.0","title":"Text Box","category":"text","description":"A simple text box.","example":{},"keywords":["text","box","content","paragraph"],"supports":{"html":false},"attributes":{"text":{"type":"string"},"alignment":{"type":"string","default":"left"},"backgroundColor":{"type":"string"},"textColor":{"type":"string"}},"textdomain":"text-box","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css","viewScript":"file:./view.js"}');
+module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"create-block/text-box","version":"0.1.0","title":"Text Box","category":"text","description":"A simple text box.","example":{},"keywords":["text","box","content","paragraph"],"supports":{"html":false,"color":{"background":true,"text":true,"gradients":true}},"attributes":{"text":{"type":"string"},"alignment":{"type":"string","default":"left"},"backgroundColor":{"type":"string"},"textColor":{"type":"string"}},"textdomain":"text-box","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css","viewScript":"file:./view.js"}');
 
 /***/ }),
 

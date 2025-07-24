@@ -9,7 +9,12 @@
 	"example": {},
 	"keywords": ["text", "box", "content", "paragraph"],
 	"supports": {
-		"html": false
+		"html": false,
+		"color": {
+			"background": true,
+			"text": true,
+			"gradients": true
+		}
 	},
 	"attributes": {
 		"text": {
