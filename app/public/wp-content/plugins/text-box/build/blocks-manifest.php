@@ -24,6 +24,10 @@ return array(
 				'background' => true,
 				'text' => true,
 				'gradients' => true
+			),
+			'spacing' => array(
+				'margin' => true,
+				'padding' => true
 			)
 		),
 		'attributes' => array(
