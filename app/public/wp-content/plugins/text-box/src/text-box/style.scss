@@ -1,4 +1,10 @@
-.wp-block-blocks-course-text-box {
+.wp-block-create-block-text-box {
+	&.is-style-squared {
+		border-radius: 0;
+	}
+	&.is-style-rounded {
+		border-radius: 10px;
+	}
 	&.text-box-align-right {
 		text-align: right;
 	}
