@@ -10,7 +10,11 @@ return array(
 		'category' => 'text',
 		'description' => 'A simple text box.',
 		'example' => array(
-			
+			'attributes' => array(
+				'text' => 'This is some text!',
+				'gradient' => 'red-to-blue',
+				'shadow' => true
+			)
 		),
 		'keywords' => array(
 			'text',

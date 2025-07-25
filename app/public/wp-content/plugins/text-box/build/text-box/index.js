@@ -8,7 +8,7 @@
   \*********************************/
 /***/ ((module) => {
 
-module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"create-block/text-box","version":"0.1.0","title":"Text Box","category":"text","description":"A simple text box.","example":{},"keywords":["text","box","content","paragraph"],"supports":{"html":false,"color":{"background":true,"text":true,"gradients":true},"spacing":{"margin":true,"padding":true}},"attributes":{"text":{"type":"string"},"alignment":{"type":"string","default":"left"},"backgroundColor":{"type":"string"},"textColor":{"type":"string"}},"styles":[{"name":"squared","label":"Squared","isDefault":true},{"name":"rounded","label":"Rounded"}],"textdomain":"text-box","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css","viewScript":"file:./view.js"}');
+module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"create-block/text-box","version":"0.1.0","title":"Text Box","category":"text","description":"A simple text box.","example":{"attributes":{"text":"This is some text!","gradient":"red-to-blue","shadow":true}},"keywords":["text","box","content","paragraph"],"supports":{"html":false,"color":{"background":true,"text":true,"gradients":true},"spacing":{"margin":true,"padding":true}},"attributes":{"text":{"type":"string"},"alignment":{"type":"string","default":"left"},"backgroundColor":{"type":"string"},"textColor":{"type":"string"}},"styles":[{"name":"squared","label":"Squared","isDefault":true},{"name":"rounded","label":"Rounded"}],"textdomain":"text-box","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css","viewScript":"file:./view.js"}');
 
 /***/ }),
 
@@ -144,6 +144,19 @@ __webpack_require__.r(__webpack_exports__);
     foreground: "blue",
     background: "light-gray"
   },
+  variations: [{
+    name: "create-block/gradient-text-box",
+    title: "Gradient Text Box",
+    description: "A text box with rounded corners.",
+    icon: {
+      src: "admin-customizer",
+      background: "#f0f0f0",
+      foreground: "#0073aa"
+    },
+    attributes: {
+      gradient: "red-to-blue"
+    }
+  }],
   edit: _edit__WEBPACK_IMPORTED_MODULE_2__["default"],
   save: _save__WEBPACK_IMPORTED_MODULE_3__["default"]
 });

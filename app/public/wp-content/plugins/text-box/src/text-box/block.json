@@ -6,7 +6,13 @@
 	"title": "Text Box",
 	"category": "text",
 	"description": "A simple text box.",
-	"example": {},
+	"example": {
+		"attributes": {
+			"text": "This is some text!",
+			"gradient": "red-to-blue",
+			"shadow": true
+		}
+	},
 	"keywords": ["text", "box", "content", "paragraph"],
 	"supports": {
 		"html": false,
