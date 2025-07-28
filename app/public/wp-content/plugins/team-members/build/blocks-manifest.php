@@ -8,7 +8,7 @@ return array(
 		'version' => '0.1.0',
 		'title' => 'Team Members',
 		'category' => 'media',
-		'icon' => 'admin-users',
+		'icon' => 'grid-view',
 		'description' => 'Team Members Grid',
 		'example' => array(
 			
