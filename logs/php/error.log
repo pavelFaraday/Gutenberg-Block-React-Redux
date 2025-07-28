@@ -26,3 +26,226 @@ Stack trace:
 #8 /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-admin/admin-ajax.php(22): require_once('/Users/macuser/...')
 #9 {main}
   thrown in /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-includes/blocks.php on line 230
+[28-Jul-2025 09:26:33 UTC] PHP Fatal error:  Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, function "blocks_course_team_members_block_init" not found or invalid function name in /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-includes/class-wp-hook.php:324
+Stack trace:
+#0 /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#1 /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#2 /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-settings.php(727): do_action('init')
+#3 /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-config.php(103): require_once('/Users/macuser/...')
+#4 /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-load.php(50): require_once('/Users/macuser/...')
+#5 /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-admin/admin.php(35): require_once('/Users/macuser/...')
+#6 /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-admin/plugins.php(10): require_once('/Users/macuser/...')
+#7 {main}
+  thrown in /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-includes/class-wp-hook.php on line 324
+[28-Jul-2025 09:26:44 UTC] PHP Fatal error:  Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, function "blocks_course_team_members_block_init" not found or invalid function name in /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-includes/class-wp-hook.php:324
+Stack trace:
+#0 /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#1 /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#2 /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-settings.php(727): do_action('init')
+#3 /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-config.php(103): require_once('/Users/macuser/...')
+#4 /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-load.php(50): require_once('/Users/macuser/...')
+#5 /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-admin/admin-ajax.php(22): require_once('/Users/macuser/...')
+#6 {main}
+  thrown in /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-includes/class-wp-hook.php on line 324
+[28-Jul-2025 09:26:46 UTC] PHP Fatal error:  Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, function "blocks_course_team_members_block_init" not found or invalid function name in /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-includes/class-wp-hook.php:324
+Stack trace:
+#0 /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#1 /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#2 /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-settings.php(727): do_action('init')
+#3 /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-config.php(103): require_once('/Users/macuser/...')
+#4 /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-load.php(50): require_once('/Users/macuser/...')
+#5 /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-admin/admin.php(35): require_once('/Users/macuser/...')
+#6 /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-admin/plugins.php(10): require_once('/Users/macuser/...')
+#7 {main}
+  thrown in /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-includes/class-wp-hook.php on line 324
+[28-Jul-2025 09:26:46 UTC] PHP Fatal error:  Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, function "blocks_course_team_members_block_init" not found or invalid function name in /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-includes/class-wp-hook.php:324
+Stack trace:
+#0 /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#1 /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#2 /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-settings.php(727): do_action('init')
+#3 /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-config.php(103): require_once('/Users/macuser/...')
+#4 /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-load.php(50): require_once('/Users/macuser/...')
+#5 /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-blog-header.php(13): require_once('/Users/macuser/...')
+#6 /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/index.php(17): require('/Users/macuser/...')
+#7 {main}
+  thrown in /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-includes/class-wp-hook.php on line 324
+[28-Jul-2025 09:26:47 UTC] PHP Fatal error:  Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, function "blocks_course_team_members_block_init" not found or invalid function name in /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-includes/class-wp-hook.php:324
+Stack trace:
+#0 /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#1 /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#2 /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-settings.php(727): do_action('init')
+#3 /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-config.php(103): require_once('/Users/macuser/...')
+#4 /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-load.php(50): require_once('/Users/macuser/...')
+#5 /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-admin/admin.php(35): require_once('/Users/macuser/...')
+#6 /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-admin/plugins.php(10): require_once('/Users/macuser/...')
+#7 {main}
+  thrown in /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-includes/class-wp-hook.php on line 324
+[28-Jul-2025 09:26:47 UTC] PHP Fatal error:  Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, function "blocks_course_team_members_block_init" not found or invalid function name in /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-includes/class-wp-hook.php:324
+Stack trace:
+#0 /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#1 /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#2 /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-settings.php(727): do_action('init')
+#3 /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-config.php(103): require_once('/Users/macuser/...')
+#4 /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-load.php(50): require_once('/Users/macuser/...')
+#5 /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-blog-header.php(13): require_once('/Users/macuser/...')
+#6 /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/index.php(17): require('/Users/macuser/...')
+#7 {main}
+  thrown in /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-includes/class-wp-hook.php on line 324
+[28-Jul-2025 09:27:26 UTC] PHP Fatal error:  Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, function "blocks_course_team_members_block_init" not found or invalid function name in /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-includes/class-wp-hook.php:324
+Stack trace:
+#0 /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#1 /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#2 /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-settings.php(727): do_action('init')
+#3 /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-config.php(103): require_once('/Users/macuser/...')
+#4 /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-load.php(50): require_once('/Users/macuser/...')
+#5 /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-admin/admin.php(35): require_once('/Users/macuser/...')
+#6 /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-admin/plugins.php(10): require_once('/Users/macuser/...')
+#7 {main}
+  thrown in /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-includes/class-wp-hook.php on line 324
+[28-Jul-2025 09:27:26 UTC] PHP Fatal error:  Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, function "blocks_course_team_members_block_init" not found or invalid function name in /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-includes/class-wp-hook.php:324
+Stack trace:
+#0 /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#1 /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#2 /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-settings.php(727): do_action('init')
+#3 /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-config.php(103): require_once('/Users/macuser/...')
+#4 /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-load.php(50): require_once('/Users/macuser/...')
+#5 /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-blog-header.php(13): require_once('/Users/macuser/...')
+#6 /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/index.php(17): require('/Users/macuser/...')
+#7 {main}
+  thrown in /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-includes/class-wp-hook.php on line 324
+[28-Jul-2025 09:27:26 UTC] PHP Fatal error:  Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, function "blocks_course_team_members_block_init" not found or invalid function name in /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-includes/class-wp-hook.php:324
+Stack trace:
+#0 /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#1 /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#2 /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-settings.php(727): do_action('init')
+#3 /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-config.php(103): require_once('/Users/macuser/...')
+#4 /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-load.php(50): require_once('/Users/macuser/...')
+#5 /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-admin/admin.php(35): require_once('/Users/macuser/...')
+#6 /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-admin/plugins.php(10): require_once('/Users/macuser/...')
+#7 {main}
+  thrown in /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-includes/class-wp-hook.php on line 324
+[28-Jul-2025 09:27:27 UTC] PHP Fatal error:  Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, function "blocks_course_team_members_block_init" not found or invalid function name in /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-includes/class-wp-hook.php:324
+Stack trace:
+#0 /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#1 /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#2 /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-settings.php(727): do_action('init')
+#3 /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-config.php(103): require_once('/Users/macuser/...')
+#4 /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-load.php(50): require_once('/Users/macuser/...')
+#5 /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-blog-header.php(13): require_once('/Users/macuser/...')
+#6 /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/index.php(17): require('/Users/macuser/...')
+#7 {main}
+  thrown in /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-includes/class-wp-hook.php on line 324
+[28-Jul-2025 09:27:40 UTC] PHP Fatal error:  Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, function "blocks_course_team_members_block_init" not found or invalid function name in /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-includes/class-wp-hook.php:324
+Stack trace:
+#0 /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#1 /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#2 /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-settings.php(727): do_action('init')
+#3 /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-config.php(103): require_once('/Users/macuser/...')
+#4 /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-load.php(50): require_once('/Users/macuser/...')
+#5 /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-admin/admin.php(35): require_once('/Users/macuser/...')
+#6 /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-admin/edit.php(10): require_once('/Users/macuser/...')
+#7 {main}
+  thrown in /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-includes/class-wp-hook.php on line 324
+[28-Jul-2025 09:27:41 UTC] PHP Fatal error:  Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, function "blocks_course_team_members_block_init" not found or invalid function name in /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-includes/class-wp-hook.php:324
+Stack trace:
+#0 /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#1 /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#2 /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-settings.php(727): do_action('init')
+#3 /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-config.php(103): require_once('/Users/macuser/...')
+#4 /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-load.php(50): require_once('/Users/macuser/...')
+#5 /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-blog-header.php(13): require_once('/Users/macuser/...')
+#6 /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/index.php(17): require('/Users/macuser/...')
+#7 {main}
+  thrown in /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-includes/class-wp-hook.php on line 324
+[28-Jul-2025 09:27:41 UTC] PHP Fatal error:  Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, function "blocks_course_team_members_block_init" not found or invalid function name in /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-includes/class-wp-hook.php:324
+Stack trace:
+#0 /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#1 /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#2 /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-settings.php(727): do_action('init')
+#3 /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-config.php(103): require_once('/Users/macuser/...')
+#4 /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-load.php(50): require_once('/Users/macuser/...')
+#5 /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-admin/admin.php(35): require_once('/Users/macuser/...')
+#6 /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-admin/post.php(12): require_once('/Users/macuser/...')
+#7 {main}
+  thrown in /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-includes/class-wp-hook.php on line 324
+[28-Jul-2025 09:27:42 UTC] PHP Fatal error:  Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, function "blocks_course_team_members_block_init" not found or invalid function name in /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-includes/class-wp-hook.php:324
+Stack trace:
+#0 /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#1 /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#2 /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-settings.php(727): do_action('init')
+#3 /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-config.php(103): require_once('/Users/macuser/...')
+#4 /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-load.php(50): require_once('/Users/macuser/...')
+#5 /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-blog-header.php(13): require_once('/Users/macuser/...')
+#6 /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/index.php(17): require('/Users/macuser/...')
+#7 {main}
+  thrown in /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-includes/class-wp-hook.php on line 324
+[28-Jul-2025 09:27:43 UTC] PHP Fatal error:  Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, function "blocks_course_team_members_block_init" not found or invalid function name in /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-includes/class-wp-hook.php:324
+Stack trace:
+#0 /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#1 /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#2 /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-settings.php(727): do_action('init')
+#3 /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-config.php(103): require_once('/Users/macuser/...')
+#4 /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-load.php(50): require_once('/Users/macuser/...')
+#5 /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-admin/admin.php(35): require_once('/Users/macuser/...')
+#6 /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-admin/edit.php(10): require_once('/Users/macuser/...')
+#7 {main}
+  thrown in /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-includes/class-wp-hook.php on line 324
+[28-Jul-2025 09:27:43 UTC] PHP Fatal error:  Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, function "blocks_course_team_members_block_init" not found or invalid function name in /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-includes/class-wp-hook.php:324
+Stack trace:
+#0 /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#1 /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#2 /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-settings.php(727): do_action('init')
+#3 /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-config.php(103): require_once('/Users/macuser/...')
+#4 /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-load.php(50): require_once('/Users/macuser/...')
+#5 /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-blog-header.php(13): require_once('/Users/macuser/...')
+#6 /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/index.php(17): require('/Users/macuser/...')
+#7 {main}
+  thrown in /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-includes/class-wp-hook.php on line 324
+[28-Jul-2025 09:27:44 UTC] PHP Fatal error:  Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, function "blocks_course_team_members_block_init" not found or invalid function name in /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-includes/class-wp-hook.php:324
+Stack trace:
+#0 /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#1 /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#2 /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-settings.php(727): do_action('init')
+#3 /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-config.php(103): require_once('/Users/macuser/...')
+#4 /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-load.php(50): require_once('/Users/macuser/...')
+#5 /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-admin/admin.php(35): require_once('/Users/macuser/...')
+#6 /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-admin/index.php(10): require_once('/Users/macuser/...')
+#7 {main}
+  thrown in /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-includes/class-wp-hook.php on line 324
+[28-Jul-2025 09:27:44 UTC] PHP Fatal error:  Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, function "blocks_course_team_members_block_init" not found or invalid function name in /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-includes/class-wp-hook.php:324
+Stack trace:
+#0 /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#1 /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#2 /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-settings.php(727): do_action('init')
+#3 /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-config.php(103): require_once('/Users/macuser/...')
+#4 /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-load.php(50): require_once('/Users/macuser/...')
+#5 /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-blog-header.php(13): require_once('/Users/macuser/...')
+#6 /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/index.php(17): require('/Users/macuser/...')
+#7 {main}
+  thrown in /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-includes/class-wp-hook.php on line 324
+[28-Jul-2025 09:28:52 UTC] PHP Fatal error:  Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, function "blocks_course_team_members_block_init" not found or invalid function name in /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-includes/class-wp-hook.php:324
+Stack trace:
+#0 /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#1 /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#2 /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-settings.php(727): do_action('init')
+#3 /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-config.php(103): require_once('/Users/macuser/...')
+#4 /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-load.php(50): require_once('/Users/macuser/...')
+#5 /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-admin/admin.php(35): require_once('/Users/macuser/...')
+#6 /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-admin/user/admin.php(12): require_once('/Users/macuser/...')
+#7 /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-admin/user/index.php(11): require_once('/Users/macuser/...')
+#8 {main}
+  thrown in /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-includes/class-wp-hook.php on line 324
+[28-Jul-2025 09:28:52 UTC] PHP Fatal error:  Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, function "blocks_course_team_members_block_init" not found or invalid function name in /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-includes/class-wp-hook.php:324
+Stack trace:
+#0 /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#1 /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#2 /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-settings.php(727): do_action('init')
+#3 /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-config.php(103): require_once('/Users/macuser/...')
+#4 /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-load.php(50): require_once('/Users/macuser/...')
+#5 /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-blog-header.php(13): require_once('/Users/macuser/...')
+#6 /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/index.php(17): require('/Users/macuser/...')
+#7 {main}
+  thrown in /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-includes/class-wp-hook.php on line 324
+[28-Jul-2025 09:31:05 UTC] PHP Warning:  dir(/Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-content/upgrade-temp-backup/plugins/team-members/node_modules/svgo/bin/): Failed to open directory: No such file or directory in /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-admin/includes/class-wp-filesystem-direct.php on line 636
+[28-Jul-2025 09:31:12 UTC] PHP Warning:  dir(/Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-content/upgrade-temp-backup/plugins/team-members/node_modules/lighthouse/cli/test/smokehouse/__snapshots__/): Failed to open directory: No such file or directory in /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-admin/includes/class-wp-filesystem-direct.php on line 636
+[28-Jul-2025 09:31:13 UTC] PHP Warning:  dir(/Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-content/upgrade-temp-backup/plugins/team-members/node_modules/wildcard/examples/): Failed to open directory: No such file or directory in /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-admin/includes/class-wp-filesystem-direct.php on line 636

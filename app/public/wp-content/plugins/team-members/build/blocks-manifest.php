@@ -7,9 +7,9 @@ return array(
 		'name' => 'create-block/team-members',
 		'version' => '0.1.0',
 		'title' => 'Team Members',
-		'category' => 'widgets',
-		'icon' => 'smiley',
-		'description' => 'Example block scaffolded with Create Block tool.',
+		'category' => 'media',
+		'icon' => 'admin-users',
+		'description' => 'Team Members Grid',
 		'example' => array(
 			
 		),
