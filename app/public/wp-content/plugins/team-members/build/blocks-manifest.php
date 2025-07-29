@@ -16,6 +16,12 @@ return array(
 		'supports' => array(
 			'html' => false
 		),
+		'attributes' => array(
+			'columns' => array(
+				'type' => 'number',
+				'default' => 3
+			)
+		),
 		'textdomain' => 'team-members',
 		'editorScript' => 'file:./index.js',
 		'editorStyle' => 'file:./index.css',
