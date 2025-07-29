@@ -34,7 +34,15 @@ function Edit() {
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
     ...(0,_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_0__.useBlockProps)(),
     children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_0__.InnerBlocks, {
-      allowedBlocks: ["create-block/team-member"]
+      allowedBlocks: ["create-block/team-member"],
+      template: [["create-block/team-member", {
+        name: "John Doe",
+        position: "Developer"
+      }], ["create-block/team-member", {
+        name: "Jane Smith",
+        position: "Designer"
+      }]],
+      templateLock: "all"
     })
   });
 }
