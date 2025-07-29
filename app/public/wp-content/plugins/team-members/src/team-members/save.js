@@ -5,7 +5,7 @@ export default function save({ attributes }) {
 	return (
 		<div
 			{...useBlockProps.save({
-				className: `has-${columns}-columns`,
+				className: `has-${columns}-columns frontend`,
 			})}
 		>
 			<InnerBlocks.Content />

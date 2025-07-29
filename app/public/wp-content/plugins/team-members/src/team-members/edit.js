@@ -13,7 +13,7 @@ export default function Edit({ attributes, setAttributes }) {
 		setAttributes({ columns: newColumns });
 	};
 	return (
-		<div {...useBlockProps({ className: `has-${columns}-columns` })}>
+		<div {...useBlockProps()}>
 			<InspectorControls>
 				<PanelBody title={__("Settings", "team-members")}>
 					<RangeControl
@@ -25,15 +25,17 @@ export default function Edit({ attributes, setAttributes }) {
 					/>
 				</PanelBody>
 			</InspectorControls>
-			<InnerBlocks
-				allowedBlocks={["create-block/team-member"]}
-				template={[
-					["create-block/team-member"],
-					["create-block/team-member"],
-					["create-block/team-member"],
-				]}
-				templateLock="all"
-			/>
+			<div className={`has-${columns}-columns parent-wrapper`}>
+				<InnerBlocks
+					allowedBlocks={["create-block/team-member"]}
+					template={[
+						["create-block/team-member"],
+						["create-block/team-member"],
+						["create-block/team-member"],
+					]}
+					templateLock="all"
+				/>
+			</div>
 		</div>
 	);
 }
