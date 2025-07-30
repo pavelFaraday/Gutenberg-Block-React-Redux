@@ -49,7 +49,7 @@ function Edit({ attributes, setAttributes, noticeUI, noticeOperations }) {
 				onSelect={onSelectImage}
 				onSelectURL={onSelectURL}
 				onError={onUploadError}
-				// accept="image/*"
+				accept="image/*"
 				allowedTypes={["image"]}
 				disableMediaButtons={url}
 				notices={noticeUI}

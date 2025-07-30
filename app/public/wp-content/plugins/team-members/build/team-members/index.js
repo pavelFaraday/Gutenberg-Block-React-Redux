@@ -248,9 +248,8 @@ function Edit({
       icon: "admin-users",
       onSelect: onSelectImage,
       onSelectURL: onSelectURL,
-      onError: onUploadError
-      // accept="image/*"
-      ,
+      onError: onUploadError,
+      accept: "image/*",
       allowedTypes: ["image"],
       disableMediaButtons: url,
       notices: noticeUI
