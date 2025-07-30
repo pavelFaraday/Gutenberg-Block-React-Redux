@@ -5,10 +5,17 @@ import {
 	MediaPlaceholder,
 	MediaReplaceFlow,
 	BlockControls,
+	InspectorControls,
 } from "@wordpress/block-editor";
 import { __ } from "@wordpress/i18n";
 import { isBlobURL, revokeBlobURL } from "@wordpress/blob";
-import { Spinner, withNotices, ToolbarButton } from "@wordpress/components";
+import {
+	Spinner,
+	withNotices,
+	ToolbarButton,
+	PanelBody,
+	TextareaControl,
+} from "@wordpress/components";
 
 function Edit({ attributes, setAttributes, noticeUI, noticeOperations }) {
 	const { name, bio, url, alt, id } = attributes;
@@ -19,6 +26,9 @@ function Edit({ attributes, setAttributes, noticeUI, noticeOperations }) {
 	};
 	const onChangeBio = (newBio) => {
 		setAttributes({ bio: newBio });
+	};
+	const onChangeAlt = (newAlt) => {
+		setAttributes({ alt: newAlt });
 	};
 
 	const onSelectImage = (image) => {
@@ -40,13 +50,13 @@ function Edit({ attributes, setAttributes, noticeUI, noticeOperations }) {
 		noticeOperations.removeAllNotices();
 		noticeOperations.createErrorNotice(message);
 	};
+
 	useEffect(() => {
 		if (!id && isBlobURL(url)) {
 			// If the URL is a blob URL, we need to clear the ID and alt text.
 			setAttributes({ url: undefined, alt: "" });
 		}
 	}, []);
-
 	useEffect(() => {
 		if (isBlobURL(url)) {
 			// If the URL is a blob URL, we need to create a blob URL.
@@ -59,6 +69,21 @@ function Edit({ attributes, setAttributes, noticeUI, noticeOperations }) {
 
 	return (
 		<>
+			<InspectorControls>
+				<PanelBody title={__("Image Settings", "team-members")}>
+					{url && !isBlobURL(url) && (
+						<TextareaControl
+							label={__("Alt text", "team-members")}
+							value={alt}
+							onChange={onChangeAlt}
+							help={__(
+								"Alternative text describes the image for people who can’t see it.",
+								"team-members",
+							)}
+						/>
+					)}
+				</PanelBody>
+			</InspectorControls>
 			{url && (
 				<BlockControls group="inline">
 					<MediaReplaceFlow
