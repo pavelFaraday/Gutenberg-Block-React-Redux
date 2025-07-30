@@ -8,7 +8,7 @@ import {
 } from "@wordpress/block-editor";
 import { __ } from "@wordpress/i18n";
 import { isBlobURL, revokeBlobURL } from "@wordpress/blob";
-import { Spinner, withNotices } from "@wordpress/components";
+import { Spinner, withNotices, ToolbarButton } from "@wordpress/components";
 
 function Edit({ attributes, setAttributes, noticeUI, noticeOperations }) {
 	const { name, bio, url, alt, id } = attributes;
@@ -30,6 +30,10 @@ function Edit({ attributes, setAttributes, noticeUI, noticeOperations }) {
 	};
 	const onSelectURL = (newURL) => {
 		setAttributes({ url: newURL, id: undefined, alt: "" });
+	};
+
+	const removeImage = () => {
+		setAttributes({ url: undefined, id: undefined, alt: "" });
 	};
 
 	const onUploadError = (message) => {
@@ -55,21 +59,26 @@ function Edit({ attributes, setAttributes, noticeUI, noticeOperations }) {
 
 	return (
 		<>
-			<BlockControls group="inline">
-				<MediaReplaceFlow
-					name={__("Replace image", "team-members")}
-					onSelect={onSelectImage}
-					onSelectURL={onSelectURL}
-					onError={onUploadError}
-					accept="image/*"
-					allowedTypes={["image"]}
-					//----
-					disableMediaButtons={!!url}
-					mediaURL={url}
-					mediaId={id}
-					mediaAlt={alt}
-				/>
-			</BlockControls>
+			{url && (
+				<BlockControls group="inline">
+					<MediaReplaceFlow
+						name={__("Replace image", "team-members")}
+						onSelect={onSelectImage}
+						onSelectURL={onSelectURL}
+						onError={onUploadError}
+						accept="image/*"
+						allowedTypes={["image"]}
+						//----
+						disableMediaButtons={!!url}
+						mediaURL={url}
+						mediaId={id}
+						mediaAlt={alt}
+					/>
+					<ToolbarButton onClick={removeImage}>
+						{__("Remove image", "team-members")}
+					</ToolbarButton>
+				</BlockControls>
+			)}
 			<div {...useBlockProps()}>
 				{url && (
 					<div
