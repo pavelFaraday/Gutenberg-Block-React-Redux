@@ -58,3 +58,17 @@
 .wp-block-create-block-team-members div.has-6-columns .block-editor-block-list__block .block-editor-block-list__block {
   width: auto;
 }
+.wp-block-create-block-team-members .wp-block-blocks-course-team-member-img {
+  position: relative;
+}
+.wp-block-create-block-team-members .wp-block-blocks-course-team-member-img.is-loading img {
+  opacity: 0.3;
+}
+.wp-block-create-block-team-members .wp-block-blocks-course-team-member-img .components-spinner {
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
