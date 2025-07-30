@@ -3,6 +3,8 @@ import {
 	useBlockProps,
 	RichText,
 	MediaPlaceholder,
+	MediaReplaceFlow,
+	BlockControls,
 } from "@wordpress/block-editor";
 import { __ } from "@wordpress/i18n";
 import { isBlobURL, revokeBlobURL } from "@wordpress/blob";
@@ -52,42 +54,59 @@ function Edit({ attributes, setAttributes, noticeUI, noticeOperations }) {
 	}, [url]);
 
 	return (
-		<div {...useBlockProps()}>
-			{url && (
-				<div
-					className={`wp-block-blocks-course-team-member-img${
-						isBlobURL(url) ? " is-loading" : ""
-					}`}
-				>
-					<img src={url} alt={alt} />
-					{isBlobURL(url) && <Spinner />}
-				</div>
-			)}
-			<MediaPlaceholder
-				icon={"admin-users"}
-				onSelect={onSelectImage}
-				onSelectURL={onSelectURL}
-				onError={onUploadError}
-				accept="image/*"
-				allowedTypes={["image"]}
-				disableMediaButtons={url}
-				notices={noticeUI}
-			/>
-			<RichText
-				tagName="h4"
-				placeholder={__("Member name", "team-members")}
-				value={name}
-				onChange={onChangeName}
-				allowedFormats={false}
-			/>
-			<RichText
-				tagName="p"
-				placeholder={__("Bio", "team-members")}
-				value={bio}
-				onChange={onChangeBio}
-				allowedFormats={false}
-			/>
-		</div>
+		<>
+			<BlockControls group="inline">
+				<MediaReplaceFlow
+					name={__("Replace image", "team-members")}
+					onSelect={onSelectImage}
+					onSelectURL={onSelectURL}
+					onError={onUploadError}
+					accept="image/*"
+					allowedTypes={["image"]}
+					//----
+					disableMediaButtons={!!url}
+					mediaURL={url}
+					mediaId={id}
+					mediaAlt={alt}
+				/>
+			</BlockControls>
+			<div {...useBlockProps()}>
+				{url && (
+					<div
+						className={`wp-block-blocks-course-team-member-img${
+							isBlobURL(url) ? " is-loading" : ""
+						}`}
+					>
+						<img src={url} alt={alt} />
+						{isBlobURL(url) && <Spinner />}
+					</div>
+				)}
+				<MediaPlaceholder
+					icon={"admin-users"}
+					onSelect={onSelectImage}
+					onSelectURL={onSelectURL}
+					onError={onUploadError}
+					accept="image/*"
+					allowedTypes={["image"]}
+					disableMediaButtons={url}
+					notices={noticeUI}
+				/>
+				<RichText
+					tagName="h4"
+					placeholder={__("Member name", "team-members")}
+					value={name}
+					onChange={onChangeName}
+					allowedFormats={false}
+				/>
+				<RichText
+					tagName="p"
+					placeholder={__("Bio", "team-members")}
+					value={bio}
+					onChange={onChangeBio}
+					allowedFormats={false}
+				/>
+			</div>
+		</>
 	);
 }
 
