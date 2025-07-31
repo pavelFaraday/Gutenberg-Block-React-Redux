@@ -1,4 +1,5 @@
-import { useEffect, useState } from "@wordpress/element";
+import { useEffect, useState, useRef } from "@wordpress/element";
+import { usePrevious } from "@wordpress/compose";
 import {
 	useBlockProps,
 	RichText,
@@ -16,10 +17,13 @@ import {
 	PanelBody,
 	TextareaControl,
 } from "@wordpress/components";
+import { use } from "react";
 
 function Edit({ attributes, setAttributes, noticeUI, noticeOperations }) {
 	const { name, bio, url, alt, id } = attributes;
 	const [blobURL, setBlobURL] = useState();
+	const titleRef = useRef();
+	const prevURL = usePrevious(url);
 
 	const onChangeName = (newName) => {
 		setAttributes({ name: newName });
@@ -66,6 +70,11 @@ function Edit({ attributes, setAttributes, noticeUI, noticeOperations }) {
 			setBlobURL(undefined);
 		}
 	}, [url]);
+	useEffect(() => {
+		if (url && !prevURL) {
+			titleRef.current?.focus();
+		}
+	}, [url, prevURL]);
 
 	return (
 		<>
@@ -126,6 +135,7 @@ function Edit({ attributes, setAttributes, noticeUI, noticeOperations }) {
 					notices={noticeUI}
 				/>
 				<RichText
+					ref={titleRef}
 					tagName="h4"
 					placeholder={__("Member name", "team-members")}
 					value={name}
