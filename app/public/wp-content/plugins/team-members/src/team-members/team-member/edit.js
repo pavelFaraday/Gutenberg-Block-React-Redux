@@ -16,11 +16,18 @@ import {
 	ToolbarButton,
 	PanelBody,
 	TextareaControl,
+	Icon,
+	Tooltip,
 } from "@wordpress/components";
-import { use } from "react";
 
-function Edit({ attributes, setAttributes, noticeUI, noticeOperations }) {
-	const { name, bio, url, alt, id } = attributes;
+function Edit({
+	attributes,
+	setAttributes,
+	noticeUI,
+	noticeOperations,
+	isSelected,
+}) {
+	const { name, bio, url, alt, id, socialLinks } = attributes;
 	const [blobURL, setBlobURL] = useState();
 	const titleRef = useRef();
 	const prevURL = usePrevious(url);
@@ -149,6 +156,24 @@ function Edit({ attributes, setAttributes, noticeUI, noticeOperations }) {
 					onChange={onChangeBio}
 					allowedFormats={false}
 				/>
+				<div className="wp-block-blocks-course-team-member-social-links">
+					<ul>
+						{socialLinks.map((item, index) => (
+							<li key={index}>
+								<Icon icon={item.icon} />
+							</li>
+						))}
+						{isSelected && (
+							<li className="wp-block-blocks-course-team-member-add-icon-li">
+								<Tooltip text={__("Add Social Link", "team-members")}>
+									<button aria-label={__("Add Social Link", "team-members")}>
+										<Icon icon="plus" />
+									</button>
+								</Tooltip>
+							</li>
+						)}
+					</ul>
+				</div>
 			</div>
 		</>
 	);
