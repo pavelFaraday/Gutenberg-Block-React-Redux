@@ -210,8 +210,10 @@ function Edit({
     socialLinks
   } = attributes;
   const [blobURL, setBlobURL] = (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.useState)();
+  const [selectedLink, setSelectedLink] = (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.useState)();
   const titleRef = (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.useRef)();
   const prevURL = (0,_wordpress_compose__WEBPACK_IMPORTED_MODULE_1__.usePrevious)(url);
+  const prevIsSelected = (0,_wordpress_compose__WEBPACK_IMPORTED_MODULE_1__.usePrevious)(isSelected);
   const onChangeName = newName => {
     setAttributes({
       name: newName
@@ -283,6 +285,11 @@ function Edit({
       titleRef.current?.focus();
     }
   }, [url, prevURL]);
+  (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+    if (!isSelected && prevIsSelected) {
+      setSelectedLink();
+    }
+  }, [isSelected, prevIsSelected]);
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.Fragment, {
     children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.InspectorControls, {
       children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_5__.PanelBody, {
@@ -347,8 +354,13 @@ function Edit({
         className: "wp-block-blocks-course-team-member-social-links",
         children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("ul", {
           children: [socialLinks.map((item, index) => /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("li", {
-            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_5__.Icon, {
-              icon: item.icon
+            className: selectedLink === index ? "is-selected" : null,
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("button", {
+              "aria-label": (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_3__.__)("Edit Social Link", "team-members"),
+              onClick: () => setSelectedLink(index),
+              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_5__.Icon, {
+                icon: item.icon
+              })
             })
           }, index)), isSelected && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("li", {
             className: "wp-block-blocks-course-team-member-add-icon-li",
