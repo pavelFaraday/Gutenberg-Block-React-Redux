@@ -44,7 +44,6 @@ function Edit({
 	const onChangeAlt = (newAlt) => {
 		setAttributes({ alt: newAlt });
 	};
-
 	const onSelectImage = (image) => {
 		if (!image || !image.url) {
 			setAttributes({ url: undefined, id: undefined, alt: "" });
@@ -55,14 +54,19 @@ function Edit({
 	const onSelectURL = (newURL) => {
 		setAttributes({ url: newURL, id: undefined, alt: "" });
 	};
-
 	const removeImage = () => {
 		setAttributes({ url: undefined, id: undefined, alt: "" });
 	};
-
 	const onUploadError = (message) => {
 		noticeOperations.removeAllNotices();
 		noticeOperations.createErrorNotice(message);
+	};
+
+	const addNewSocialItem = () => {
+		setAttributes({
+			socialLinks: [...socialLinks, { icon: "wordpress", link: "" }],
+		});
+		setSelectedLink(socialLinks.length);
 	};
 
 	useEffect(() => {
@@ -182,7 +186,10 @@ function Edit({
 						{isSelected && (
 							<li className="wp-block-blocks-course-team-member-add-icon-li">
 								<Tooltip text={__("Add Social Link", "team-members")}>
-									<button aria-label={__("Add Social Link", "team-members")}>
+									<button
+										aria-label={__("Add Social Link", "team-members")}
+										onClick={addNewSocialItem}
+									>
 										<Icon icon="plus" />
 									</button>
 								</Tooltip>

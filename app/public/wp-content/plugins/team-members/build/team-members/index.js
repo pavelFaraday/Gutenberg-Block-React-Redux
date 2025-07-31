@@ -262,6 +262,15 @@ function Edit({
     noticeOperations.removeAllNotices();
     noticeOperations.createErrorNotice(message);
   };
+  const addNewSocialItem = () => {
+    setAttributes({
+      socialLinks: [...socialLinks, {
+        icon: "wordpress",
+        link: ""
+      }]
+    });
+    setSelectedLink(socialLinks.length);
+  };
   (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
     if (!id && (0,_wordpress_blob__WEBPACK_IMPORTED_MODULE_4__.isBlobURL)(url)) {
       // If the URL is a blob URL, we need to clear the ID and alt text.
@@ -368,6 +377,7 @@ function Edit({
               text: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_3__.__)("Add Social Link", "team-members"),
               children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("button", {
                 "aria-label": (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_3__.__)("Add Social Link", "team-members"),
+                onClick: addNewSocialItem,
                 children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_5__.Icon, {
                   icon: "plus"
                 })
