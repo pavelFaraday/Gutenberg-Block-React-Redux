@@ -77,6 +77,16 @@ function Edit({
 		setAttributes({ socialLinks: socialLinksCopy });
 	};
 
+	const removeSocialItem = () => {
+		setAttributes({
+			socialLinks: [
+				...socialLinks.slice(0, selectedLink),
+				socialLinks.slice(selectedLink + 1),
+			],
+		});
+		setSelectedLink();
+	};
+
 	useEffect(() => {
 		if (!id && isBlobURL(url)) {
 			// If the URL is a blob URL, we need to clear the ID and alt text.
@@ -218,7 +228,7 @@ function Edit({
 							value={socialLinks[selectedLink].link}
 							onChange={(link) => updateSocialItem("link", link)}
 						/>
-						<Button isDestructive>
+						<Button isDestructive onClick={removeSocialItem}>
 							<Icon icon="trash" /> {__("Remove Link", "team-members")}
 						</Button>
 					</div>
