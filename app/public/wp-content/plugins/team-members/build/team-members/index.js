@@ -271,6 +271,13 @@ function Edit({
     });
     setSelectedLink(socialLinks.length);
   };
+  const updateSocialItem = (type, value) => {
+    const socialLinksCopy = [...socialLinks];
+    socialLinksCopy[selectedLink][type] = value;
+    setAttributes({
+      socialLinks: socialLinksCopy
+    });
+  };
   (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
     if (!id && (0,_wordpress_blob__WEBPACK_IMPORTED_MODULE_4__.isBlobURL)(url)) {
       // If the URL is a blob URL, we need to clear the ID and alt text.
@@ -388,9 +395,13 @@ function Edit({
       }), selectedLink !== undefined && socialLinks[selectedLink] && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("div", {
         className: "wp-block-blocks-course-team-member-link-form",
         children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_5__.TextControl, {
-          label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_3__.__)("Icon", "team-members")
+          label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_3__.__)("Icon", "team-members"),
+          value: socialLinks[selectedLink].icon,
+          onChange: icon => updateSocialItem("icon", icon)
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_5__.TextControl, {
-          label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_3__.__)("URL", "team-members")
+          label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_3__.__)("URL", "team-members"),
+          value: socialLinks[selectedLink].link,
+          onChange: link => updateSocialItem("link", link)
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)(_wordpress_components__WEBPACK_IMPORTED_MODULE_5__.Button, {
           isDestructive: true,
           children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_5__.Icon, {

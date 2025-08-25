@@ -71,6 +71,12 @@ function Edit({
 		setSelectedLink(socialLinks.length);
 	};
 
+	const updateSocialItem = (type, value) => {
+		const socialLinksCopy = [...socialLinks];
+		socialLinksCopy[selectedLink][type] = value;
+		setAttributes({ socialLinks: socialLinksCopy });
+	};
+
 	useEffect(() => {
 		if (!id && isBlobURL(url)) {
 			// If the URL is a blob URL, we need to clear the ID and alt text.
@@ -202,8 +208,16 @@ function Edit({
 
 				{selectedLink !== undefined && socialLinks[selectedLink] && (
 					<div className="wp-block-blocks-course-team-member-link-form">
-						<TextControl label={__("Icon", "team-members")} />
-						<TextControl label={__("URL", "team-members")} />
+						<TextControl
+							label={__("Icon", "team-members")}
+							value={socialLinks[selectedLink].icon}
+							onChange={(icon) => updateSocialItem("icon", icon)}
+						/>
+						<TextControl
+							label={__("URL", "team-members")}
+							value={socialLinks[selectedLink].link}
+							onChange={(link) => updateSocialItem("link", link)}
+						/>
 						<Button isDestructive>
 							<Icon icon="trash" /> {__("Remove Link", "team-members")}
 						</Button>
