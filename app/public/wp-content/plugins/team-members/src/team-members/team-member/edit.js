@@ -18,6 +18,8 @@ import {
 	TextareaControl,
 	Icon,
 	Tooltip,
+	TextControl,
+	Button,
 } from "@wordpress/components";
 
 function Edit({
@@ -197,6 +199,16 @@ function Edit({
 						)}
 					</ul>
 				</div>
+
+				{selectedLink !== undefined && socialLinks[selectedLink] && (
+					<div className="wp-block-blocks-course-team-member-link-form">
+						<TextControl label={__("Icon", "team-members")} />
+						<TextControl label={__("URL", "team-members")} />
+						<Button isDestructive>
+							<Icon icon="trash" /> {__("Remove Link", "team-members")}
+						</Button>
+					</div>
+				)}
 			</div>
 		</>
 	);
