@@ -5,6 +5,7 @@ return array(
 		'$schema' => 'https://schemas.wp.org/trunk/block.json',
 		'apiVersion' => 3,
 		'name' => 'block-course/latest-posts',
+		'render' => 'block_course_latest_posts_block',
 		'version' => '0.1.0',
 		'title' => 'Latest Posts',
 		'category' => 'widgets',
@@ -12,6 +13,12 @@ return array(
 		'description' => 'Display & Filter latest posts',
 		'example' => array(
 			
+		),
+		'attributes' => array(
+			'numberOfPosts' => array(
+				'type' => 'number',
+				'default' => 5
+			)
 		),
 		'supports' => array(
 			'html' => false
