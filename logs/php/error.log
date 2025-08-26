@@ -308,3 +308,64 @@ Stack trace:
 [26-Aug-2025 11:46:43 UTC] render callback fired
 [26-Aug-2025 11:47:22 UTC] render callback fired
 [26-Aug-2025 11:48:05 UTC] render callback fired
+[26-Aug-2025 13:15:36 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-content/plugins/latest-posts/latest-posts.php:32) in /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-admin/admin-header.php on line 14
+[26-Aug-2025 13:15:38 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-content/plugins/latest-posts/latest-posts.php:32) in /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-includes/rest-api/class-wp-rest-server.php on line 1896
+[26-Aug-2025 13:15:38 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-content/plugins/latest-posts/latest-posts.php:32) in /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-includes/rest-api/class-wp-rest-server.php on line 1896
+[26-Aug-2025 13:15:38 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-content/plugins/latest-posts/latest-posts.php:32) in /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-includes/rest-api/class-wp-rest-server.php on line 1896
+[26-Aug-2025 13:15:38 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-content/plugins/latest-posts/latest-posts.php:32) in /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-includes/rest-api/class-wp-rest-server.php on line 1920
+[26-Aug-2025 13:19:50 UTC] PHP Parse error:  syntax error, unexpected token "." in /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-content/plugins/latest-posts/latest-posts.php on line 33
+[26-Aug-2025 13:26:53 UTC] PHP Fatal error:  Uncaught Error: Object of class WP_Post could not be converted to string in /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-content/plugins/latest-posts/latest-posts.php:39
+Stack trace:
+#0 /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-includes/class-wp-block.php(586): block_course_latest_posts_block(Array, '', Object(WP_Block))
+#1 /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-includes/blocks.php(2359): WP_Block->render()
+#2 /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-includes/blocks.php(2431): render_block(Array)
+#3 /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-includes/class-wp-hook.php(324): do_blocks('<!-- wp:block-c...')
+#4 /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-includes/plugin.php(205): WP_Hook->apply_filters('<!-- wp:block-c...', Array)
+#5 /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-includes/post-template.php(256): apply_filters('the_content', '<!-- wp:block-c...')
+#6 /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-content/themes/blocks-theme/template-parts/content.php(36): the_content('Continue readin...')
+#7 /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-includes/template.php(812): require('/Users/macuser/...')
+#8 /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-includes/template.php(745): load_template('/Users/macuser/...', false, Array)
+#9 /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-includes/general-template.php(206): locate_template(Array, true, false, Array)
+#10 /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-content/themes/blocks-theme/single.php(19): get_template_part('template-parts/...', 'post')
+#11 /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-includes/template-loader.php(106): include('/Users/macuser/...')
+#12 /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-blog-header.php(19): require_once('/Users/macuser/...')
+#13 /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/index.php(17): require('/Users/macuser/...')
+#14 {main}
+  thrown in /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-content/plugins/latest-posts/latest-posts.php on line 39
+[26-Aug-2025 13:28:45 UTC] PHP Fatal error:  Uncaught Error: Object of class WP_Post could not be converted to string in /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-content/plugins/latest-posts/latest-posts.php:39
+Stack trace:
+#0 /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-includes/class-wp-block.php(586): block_course_latest_posts_block(Array, '', Object(WP_Block))
+#1 /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-includes/blocks.php(2359): WP_Block->render()
+#2 /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-includes/blocks.php(2431): render_block(Array)
+#3 /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-includes/class-wp-hook.php(324): do_blocks('<!-- wp:block-c...')
+#4 /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-includes/plugin.php(205): WP_Hook->apply_filters('<!-- wp:block-c...', Array)
+#5 /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-includes/post-template.php(256): apply_filters('the_content', '<!-- wp:block-c...')
+#6 /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-content/themes/blocks-theme/template-parts/content.php(36): the_content('Continue readin...')
+#7 /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-includes/template.php(812): require('/Users/macuser/...')
+#8 /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-includes/template.php(745): load_template('/Users/macuser/...', false, Array)
+#9 /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-includes/general-template.php(206): locate_template(Array, true, false, Array)
+#10 /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-content/themes/blocks-theme/single.php(19): get_template_part('template-parts/...', 'post')
+#11 /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-includes/template-loader.php(106): include('/Users/macuser/...')
+#12 /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-blog-header.php(19): require_once('/Users/macuser/...')
+#13 /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/index.php(17): require('/Users/macuser/...')
+#14 {main}
+  thrown in /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-content/plugins/latest-posts/latest-posts.php on line 39
+[26-Aug-2025 13:28:46 UTC] PHP Fatal error:  Uncaught Error: Object of class WP_Post could not be converted to string in /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-content/plugins/latest-posts/latest-posts.php:39
+Stack trace:
+#0 /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-includes/class-wp-block.php(586): block_course_latest_posts_block(Array, '', Object(WP_Block))
+#1 /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-includes/blocks.php(2359): WP_Block->render()
+#2 /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-includes/blocks.php(2431): render_block(Array)
+#3 /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-includes/class-wp-hook.php(324): do_blocks('<!-- wp:block-c...')
+#4 /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-includes/plugin.php(205): WP_Hook->apply_filters('<!-- wp:block-c...', Array)
+#5 /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-includes/post-template.php(256): apply_filters('the_content', '<!-- wp:block-c...')
+#6 /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-content/themes/blocks-theme/template-parts/content.php(36): the_content('Continue readin...')
+#7 /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-includes/template.php(812): require('/Users/macuser/...')
+#8 /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-includes/template.php(745): load_template('/Users/macuser/...', false, Array)
+#9 /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-includes/general-template.php(206): locate_template(Array, true, false, Array)
+#10 /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-content/themes/blocks-theme/single.php(19): get_template_part('template-parts/...', 'post')
+#11 /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-includes/template-loader.php(106): include('/Users/macuser/...')
+#12 /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-blog-header.php(19): require_once('/Users/macuser/...')
+#13 /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/index.php(17): require('/Users/macuser/...')
+#14 {main}
+  thrown in /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-content/plugins/latest-posts/latest-posts.php on line 39
+[26-Aug-2025 13:35:58 UTC] PHP Parse error:  syntax error, unexpected token ")" in /Users/macuser/Local Sites/udemy-complex-gutenberg-blocks-and-plugins/app/public/wp-content/plugins/latest-posts/latest-posts.php on line 43

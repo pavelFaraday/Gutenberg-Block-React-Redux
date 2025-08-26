@@ -24,7 +24,36 @@ if (! defined('ABSPATH')) {
  */
 function block_course_latest_posts_block($attributes, $content, $block)
 {
-	return 'Latest Posts BlablaBla';
+	$args = array(
+		'posts_per_page' => $attributes['numberOfPosts'] ?? 5,
+		'post_status' => 'publish',
+	);
+	$recent_posts = get_posts($args);
+
+	$posts = '<ul ' . get_block_wrapper_attributes() .  '>';
+	foreach ($recent_posts as $post) {
+		$title = get_the_title($post);
+		$title = $title ? $title : __('(no title)', 'latest-posts');
+		$permalink = get_permalink($post);
+		$excerpt = get_the_excerpt($post);
+
+		$posts .= '<li>';
+
+
+		if ($attributes['displayFeaturedImage'] && has_post_thumbnail($post)) {
+			$posts .= get_the_post_thumbnail($post, 'large');
+		}
+
+		$posts .= '<h5><a href="' . esc_url($permalink) . '">' . esc_html($title) . '</a></h5>';
+		if ($excerpt) {
+			$posts .= '<p>' . esc_html($excerpt) . '</p>';
+		}
+		$posts .= '<time datetime="' . esc_attr(get_the_date('c', $post)) . '">' . esc_html(get_the_date('', $post)) . '</time>';
+		$posts .= '</li>';
+	}
+	$posts .= '</ul>';
+
+	return $posts;
 }
 
 function block_course_latest_posts_block_init()

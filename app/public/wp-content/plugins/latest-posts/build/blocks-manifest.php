@@ -18,6 +18,10 @@ return array(
 			'numberOfPosts' => array(
 				'type' => 'number',
 				'default' => 5
+			),
+			'displayFeaturedImage' => array(
+				'type' => 'boolean',
+				'default' => true
 			)
 		),
 		'supports' => array(
