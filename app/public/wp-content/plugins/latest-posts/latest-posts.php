@@ -18,10 +18,6 @@ if (! defined('ABSPATH')) {
 	exit;
 }
 
-/**
- * Server-side render callback.
- * If using the collection helpers, add `"render": "block_course_latest_posts_block"` in block.json.
- */
 function block_course_latest_posts_block($attributes, $content, $block)
 {
 	$args = array(
@@ -38,8 +34,6 @@ function block_course_latest_posts_block($attributes, $content, $block)
 		$excerpt = get_the_excerpt($post);
 
 		$posts .= '<li>';
-
-
 		if ($attributes['displayFeaturedImage'] && has_post_thumbnail($post)) {
 			$posts .= get_the_post_thumbnail($post, 'large');
 		}
